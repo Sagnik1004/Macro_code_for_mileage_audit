@@ -1,0 +1,397 @@
+Sub Batch_process_fetch()
+'
+' Batch_process_fetch Macro
+'
+
+'
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    Columns("R:R").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("R1").Select
+    ActiveCell.FormulaR1C1 = "Correct BIP"
+    Cells.Select
+    Range("J1").Activate
+    Cells.EntireColumn.AutoFit
+    Range("M2").Select
+    Windows("TEOCO2 Mile & BIP Template Updated 10-12-10.xls").Activate
+    Range("E3").Select
+    ActiveCell.FormulaR1C1 = "=RC[21]"
+    Range("I3").Select
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    Range("N3").Select
+    ActiveCell.FormulaR1C1 = "=RC[12]"
+    Range("N4").Select
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Range("E3").Select
+    Selection.AutoFill Destination:=Range("E3:E3000"), Type:=xlFillDefault
+    Range("E3:E3000").Select
+    ActiveWindow.ScrollRow = 2968
+    ActiveWindow.ScrollRow = 2963
+    ActiveWindow.ScrollRow = 2942
+    ActiveWindow.ScrollRow = 2932
+    ActiveWindow.ScrollRow = 2896
+    ActiveWindow.ScrollRow = 2792
+    ActiveWindow.ScrollRow = 2704
+    ActiveWindow.ScrollRow = 2667
+    ActiveWindow.ScrollRow = 2356
+    ActiveWindow.ScrollRow = 2294
+    ActiveWindow.ScrollRow = 2123
+    ActiveWindow.ScrollRow = 2008
+    ActiveWindow.ScrollRow = 1837
+    ActiveWindow.ScrollRow = 1650
+    ActiveWindow.ScrollRow = 1593
+    ActiveWindow.ScrollRow = 1246
+    ActiveWindow.ScrollRow = 1220
+    ActiveWindow.ScrollRow = 1163
+    ActiveWindow.ScrollRow = 1132
+    ActiveWindow.ScrollRow = 1049
+    ActiveWindow.ScrollRow = 1017
+    ActiveWindow.ScrollRow = 976
+    ActiveWindow.ScrollRow = 955
+    ActiveWindow.ScrollRow = 846
+    ActiveWindow.ScrollRow = 841
+    ActiveWindow.ScrollRow = 831
+    ActiveWindow.ScrollRow = 825
+    ActiveWindow.ScrollRow = 820
+    ActiveWindow.ScrollRow = 815
+    ActiveWindow.ScrollRow = 789
+    ActiveWindow.ScrollRow = 784
+    ActiveWindow.ScrollRow = 779
+    ActiveWindow.ScrollRow = 774
+    ActiveWindow.ScrollRow = 768
+    ActiveWindow.ScrollRow = 758
+    ActiveWindow.ScrollRow = 742
+    ActiveWindow.ScrollRow = 727
+    ActiveWindow.ScrollRow = 711
+    ActiveWindow.ScrollRow = 696
+    ActiveWindow.ScrollRow = 675
+    ActiveWindow.ScrollRow = 587
+    ActiveWindow.ScrollRow = 561
+    ActiveWindow.ScrollRow = 519
+    ActiveWindow.ScrollRow = 493
+    ActiveWindow.ScrollRow = 410
+    ActiveWindow.ScrollRow = 400
+    ActiveWindow.ScrollRow = 384
+    ActiveWindow.ScrollRow = 379
+    ActiveWindow.ScrollRow = 369
+    ActiveWindow.ScrollRow = 364
+    ActiveWindow.ScrollRow = 312
+    ActiveWindow.ScrollRow = 296
+    ActiveWindow.ScrollRow = 281
+    ActiveWindow.ScrollRow = 255
+    ActiveWindow.ScrollRow = 244
+    ActiveWindow.ScrollRow = 234
+    ActiveWindow.ScrollRow = 198
+    ActiveWindow.ScrollRow = 187
+    ActiveWindow.ScrollRow = 182
+    ActiveWindow.ScrollRow = 167
+    ActiveWindow.ScrollRow = 161
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 146
+    ActiveWindow.ScrollRow = 135
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 115
+    ActiveWindow.ScrollRow = 104
+    ActiveWindow.ScrollRow = 99
+    ActiveWindow.ScrollRow = 89
+    ActiveWindow.ScrollRow = 78
+    ActiveWindow.ScrollRow = 68
+    ActiveWindow.ScrollRow = 63
+    ActiveWindow.ScrollRow = 52
+    ActiveWindow.ScrollRow = 47
+    ActiveWindow.ScrollRow = 37
+    ActiveWindow.ScrollRow = 32
+    ActiveWindow.ScrollRow = 21
+    ActiveWindow.ScrollRow = 16
+    ActiveWindow.ScrollRow = 6
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollRow = 6
+    ActiveWindow.ScrollRow = 11
+    ActiveWindow.ScrollRow = 16
+    ActiveWindow.ScrollRow = 26
+    ActiveWindow.ScrollRow = 37
+    ActiveWindow.ScrollRow = 47
+    ActiveWindow.ScrollRow = 63
+    ActiveWindow.ScrollRow = 73
+    ActiveWindow.ScrollRow = 88
+    ActiveWindow.ScrollRow = 94
+    ActiveWindow.ScrollRow = 109
+    ActiveWindow.ScrollRow = 114
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 135
+    ActiveWindow.ScrollRow = 140
+    ActiveWindow.ScrollRow = 145
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 156
+    ActiveWindow.ScrollRow = 161
+    ActiveWindow.ScrollRow = 166
+    ActiveWindow.ScrollRow = 171
+    ActiveWindow.ScrollRow = 176
+    ActiveWindow.ScrollRow = 182
+    ActiveWindow.ScrollRow = 187
+    ActiveWindow.ScrollRow = 192
+    ActiveWindow.ScrollRow = 197
+    ActiveWindow.ScrollRow = 207
+    ActiveWindow.ScrollRow = 213
+    ActiveWindow.ScrollRow = 218
+    ActiveWindow.ScrollRow = 223
+    ActiveWindow.ScrollRow = 228
+    ActiveWindow.ScrollRow = 233
+    ActiveWindow.ScrollRow = 239
+    ActiveWindow.ScrollRow = 244
+    ActiveWindow.ScrollRow = 249
+    ActiveWindow.ScrollRow = 254
+    ActiveWindow.ScrollRow = 259
+    ActiveWindow.ScrollRow = 270
+    ActiveWindow.ScrollRow = 275
+    ActiveWindow.ScrollRow = 280
+    ActiveWindow.ScrollRow = 285
+    ActiveWindow.ScrollRow = 290
+    ActiveWindow.ScrollRow = 295
+    ActiveWindow.ScrollRow = 301
+    ActiveWindow.ScrollRow = 290
+    ActiveWindow.ScrollRow = 280
+    ActiveWindow.ScrollRow = 239
+    ActiveWindow.ScrollRow = 218
+    ActiveWindow.ScrollRow = 202
+    ActiveWindow.ScrollRow = 197
+    ActiveWindow.ScrollRow = 187
+    ActiveWindow.ScrollRow = 182
+    ActiveWindow.ScrollRow = 176
+    ActiveWindow.ScrollRow = 171
+    ActiveWindow.ScrollRow = 166
+    ActiveWindow.ScrollRow = 161
+    ActiveWindow.ScrollRow = 156
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 145
+    ActiveWindow.ScrollRow = 140
+    ActiveWindow.ScrollRow = 135
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 125
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 135
+    ActiveWindow.ScrollRow = 140
+    ActiveWindow.ScrollRow = 145
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 156
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 114
+    ActiveWindow.ScrollRow = 52
+    ActiveWindow.ScrollRow = 21
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    Range("N3").Select
+    Selection.AutoFill Destination:=Range("N3:N3000"), Type:=xlFillDefault
+    Range("N3:N3000").Select
+    ActiveWindow.ScrollRow = 2956
+    ActiveWindow.ScrollRow = 2925
+    ActiveWindow.ScrollRow = 2909
+    ActiveWindow.ScrollRow = 2816
+    ActiveWindow.ScrollRow = 2774
+    ActiveWindow.ScrollRow = 2515
+    ActiveWindow.ScrollRow = 2489
+    ActiveWindow.ScrollRow = 2396
+    ActiveWindow.ScrollRow = 2360
+    ActiveWindow.ScrollRow = 2137
+    ActiveWindow.ScrollRow = 2049
+    ActiveWindow.ScrollRow = 1686
+    ActiveWindow.ScrollRow = 1623
+    ActiveWindow.ScrollRow = 1411
+    ActiveWindow.ScrollRow = 1229
+    ActiveWindow.ScrollRow = 1105
+    ActiveWindow.ScrollRow = 1084
+    ActiveWindow.ScrollRow = 929
+    ActiveWindow.ScrollRow = 892
+    ActiveWindow.ScrollRow = 752
+    ActiveWindow.ScrollRow = 685
+    ActiveWindow.ScrollRow = 581
+    ActiveWindow.ScrollRow = 555
+    ActiveWindow.ScrollRow = 462
+    ActiveWindow.ScrollRow = 446
+    ActiveWindow.ScrollRow = 410
+    ActiveWindow.ScrollRow = 395
+    ActiveWindow.ScrollRow = 291
+    ActiveWindow.ScrollRow = 270
+    ActiveWindow.ScrollRow = 234
+    ActiveWindow.ScrollRow = 218
+    ActiveWindow.ScrollRow = 140
+    ActiveWindow.ScrollRow = 130
+    ActiveWindow.ScrollRow = 89
+    ActiveWindow.ScrollRow = 73
+    ActiveWindow.ScrollRow = 11
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    Windows("DS1 MRC.xlsx").Activate
+    Range("M2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=VLOOKUP(RC[-12],'[TEOCO2 Mile & BIP Template Updated 10-12-10.xls]Sheet1'!R3C14:R3000C21,8,0)"
+    Windows("TEOCO2 Mile & BIP Template Updated 10-12-10.xls").Activate
+    ActiveWindow.ScrollRow = 2945
+    ActiveWindow.ScrollRow = 2898
+    ActiveWindow.ScrollRow = 2790
+    ActiveWindow.ScrollRow = 2727
+    ActiveWindow.ScrollRow = 1977
+    ActiveWindow.ScrollRow = 1889
+    ActiveWindow.ScrollRow = 1801
+    ActiveWindow.ScrollRow = 1118
+    ActiveWindow.ScrollRow = 1056
+    ActiveWindow.ScrollRow = 922
+    ActiveWindow.ScrollRow = 885
+    ActiveWindow.ScrollRow = 596
+    ActiveWindow.ScrollRow = 565
+    ActiveWindow.ScrollRow = 533
+    ActiveWindow.ScrollRow = 394
+    ActiveWindow.ScrollRow = 378
+    ActiveWindow.ScrollRow = 358
+    ActiveWindow.ScrollRow = 342
+    ActiveWindow.ScrollRow = 311
+    ActiveWindow.ScrollRow = 249
+    ActiveWindow.ScrollRow = 176
+    ActiveWindow.ScrollRow = 156
+    ActiveWindow.ScrollRow = 57
+    ActiveWindow.ScrollRow = 21
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    Windows("DS1 MRC.xlsx").Activate
+    Range("N2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=VLOOKUP(RC[-13],'[TEOCO2 Mile & BIP Template Updated 10-12-10.xls]Sheet1'!R3C5:R3000C10,6,0)"
+    Range("O2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=VLOOKUP(RC[-14],'[TEOCO2 Mile & BIP Template Updated 10-12-10.xls]Sheet1'!R3C5:R3000C6,2,0)"
+    Range("S2").Select
+    Columns("O:O").EntireColumn.AutoFit
+    Range("P2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=VLOOKUP(RC[-15],'[TEOCO2 Mile & BIP Template Updated 10-12-10.xls]Sheet1'!R3C14:R3000C19,6,0)"
+    Range("Q2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=VLOOKUP(RC[-16],'[TEOCO2 Mile & BIP Template Updated 10-12-10.xls]Sheet1'!R3C14:R3000C15,2,0)"
+    Columns("Q:Q").EntireColumn.AutoFit
+    Range("Q2").Select
+    Windows("TEOCO2 Mile & BIP Template Updated 10-12-10.xls").Activate
+    ActiveWindow.ScrollRow = 2960
+    ActiveWindow.ScrollRow = 2929
+    ActiveWindow.ScrollRow = 2898
+    ActiveWindow.ScrollRow = 2702
+    ActiveWindow.ScrollRow = 2634
+    ActiveWindow.ScrollRow = 2557
+    ActiveWindow.ScrollRow = 2101
+    ActiveWindow.ScrollRow = 2039
+    ActiveWindow.ScrollRow = 1786
+    ActiveWindow.ScrollRow = 1620
+    ActiveWindow.ScrollRow = 1423
+    ActiveWindow.ScrollRow = 1367
+    ActiveWindow.ScrollRow = 1025
+    ActiveWindow.ScrollRow = 984
+    ActiveWindow.ScrollRow = 870
+    ActiveWindow.ScrollRow = 678
+    ActiveWindow.ScrollRow = 513
+    ActiveWindow.ScrollRow = 471
+    ActiveWindow.ScrollRow = 352
+    ActiveWindow.ScrollRow = 342
+    ActiveWindow.ScrollRow = 326
+    ActiveWindow.ScrollRow = 311
+    ActiveWindow.ScrollRow = 306
+    ActiveWindow.ScrollRow = 275
+    ActiveWindow.ScrollRow = 270
+    ActiveWindow.ScrollRow = 264
+    ActiveWindow.ScrollRow = 259
+    ActiveWindow.ScrollRow = 249
+    ActiveWindow.ScrollRow = 244
+    ActiveWindow.ScrollRow = 239
+    ActiveWindow.ScrollRow = 228
+    ActiveWindow.ScrollRow = 223
+    ActiveWindow.ScrollRow = 218
+    ActiveWindow.ScrollRow = 192
+    ActiveWindow.ScrollRow = 182
+    ActiveWindow.ScrollRow = 151
+    ActiveWindow.ScrollRow = 135
+    ActiveWindow.ScrollRow = 120
+    ActiveWindow.ScrollRow = 114
+    ActiveWindow.ScrollRow = 99
+    ActiveWindow.ScrollRow = 94
+    ActiveWindow.ScrollRow = 88
+    ActiveWindow.ScrollRow = 83
+    ActiveWindow.ScrollRow = 78
+    ActiveWindow.ScrollRow = 68
+    ActiveWindow.ScrollRow = 63
+    ActiveWindow.ScrollRow = 57
+    ActiveWindow.ScrollRow = 52
+    ActiveWindow.ScrollRow = 47
+    ActiveWindow.ScrollRow = 42
+    ActiveWindow.ScrollRow = 37
+    ActiveWindow.ScrollRow = 32
+    ActiveWindow.ScrollRow = 26
+    ActiveWindow.ScrollRow = 21
+    ActiveWindow.ScrollRow = 16
+    ActiveWindow.ScrollRow = 11
+    ActiveWindow.ScrollRow = 6
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    Windows("DS1 MRC.xlsx").Activate
+    Range("R2").Select
+    ActiveCell.FormulaR1C1 = _
+        "=IF(RC[-12]=RC[-4], RC[-4], IF(RC[-12]=RC[-2], RC[-2], ""BIP not matching""))"
+    Range("R3").Select
+End Sub
