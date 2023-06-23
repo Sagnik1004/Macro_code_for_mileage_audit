@@ -1,0 +1,261 @@
+Sub Mileage_audit_prep()
+'
+' Mileage_audit_prep Macro
+'
+
+'
+    Columns("A:A").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "STRIP_EC_ID"
+    Columns("B:B").Select
+    Columns("A:A").EntireColumn.AutoFit
+    Columns("B:B").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "CFA"
+    Columns("C:C").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Z NPANXX"
+    Columns("D:D").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "MUX"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Z NPANXX"
+    Columns("E:E").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "End user address"
+    Range("F3").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Columns("F:F").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "BIP"
+    Columns("G:G").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("G1").Select
+    ActiveCell.FormulaR1C1 = "Adj BIP"
+    Columns("H:H").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("H1").Select
+    ActiveCell.FormulaR1C1 = "GLOSSARY DESC"
+    Columns("I:I").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("I1").Select
+    ActiveCell.FormulaR1C1 = "Vendor mileage"
+    Columns("J:J").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("J1").Select
+    ActiveCell.FormulaR1C1 = "Initial rate"
+    Columns("K:K").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("K1").Select
+    ActiveCell.FormulaR1C1 = "Unit rate"
+    Columns("L:L").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("L1").Select
+    ActiveCell.FormulaR1C1 = "Bill amount"
+    Columns("M:M").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("M1").Select
+    ActiveCell.FormulaR1C1 = "Correct mileage"
+    Columns("N:N").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("N1").Select
+    ActiveCell.FormulaR1C1 = "Correct BIP1"
+    Columns("O:O").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    ActiveWindow.SmallScroll ToRight:=9
+    Range("O1").Select
+    ActiveCell.FormulaR1C1 = "Carrier 1"
+    Columns("P:P").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("P1").Select
+    ActiveCell.FormulaR1C1 = "Correct BIP2"
+    Columns("Q:Q").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("Q1").Select
+    ActiveCell.FormulaR1C1 = "Carrier 2"
+    Columns("R:R").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("R1").Select
+    ActiveCell.FormulaR1C1 = "Correct bill amount"
+    Range("R3").Select
+    Columns("R:R").EntireColumn.AutoFit
+    Columns("S:S").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("S1").Select
+    ActiveCell.FormulaR1C1 = "Overbilling"
+    Columns("T:T").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("T1").Select
+    ActiveCell.FormulaR1C1 = "Potential total dispute"
+    Range("T4").Select
+    Columns("T:T").EntireColumn.AutoFit
+    Columns("U:U").Select
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("U1").Select
+    ActiveCell.FormulaR1C1 = "OCN"
+    Range("U1").Select
+    Selection.End(xlToLeft).Select
+    Selection.End(xlToLeft).Select
+    Range("A1:U1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent2
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "=RC[56]"
+    Range("A3").Select
+    Columns("A:A").EntireColumn.AutoFit
+    Range("B2").Select
+    Sheets("Prov").Select
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Sheets("MRC").Select
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-1],Prov!R2C2:R200C12,11,0)"
+    Columns("B:B").EntireColumn.AutoFit
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-2],Prov!R2C2:R200C53,52,0)"
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-3],Prov!R2C2:R200C24,23,0)"
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-4],Prov!R2C2:R200C52,51,0)"
+    Range("E2").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "=RC[97]"
+    Range("F2").Select
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 22
+    ActiveWindow.ScrollColumn = 25
+    ActiveWindow.ScrollColumn = 33
+    ActiveWindow.ScrollColumn = 36
+    ActiveWindow.ScrollColumn = 39
+    ActiveWindow.ScrollColumn = 40
+    ActiveWindow.ScrollColumn = 43
+    ActiveWindow.ScrollColumn = 45
+    ActiveWindow.ScrollColumn = 46
+    ActiveWindow.ScrollColumn = 47
+    ActiveWindow.ScrollColumn = 48
+    ActiveWindow.ScrollColumn = 49
+    ActiveWindow.ScrollColumn = 50
+    ActiveWindow.ScrollColumn = 53
+    ActiveWindow.ScrollColumn = 59
+    ActiveWindow.ScrollColumn = 64
+    ActiveWindow.ScrollColumn = 66
+    ActiveWindow.ScrollColumn = 67
+    ActiveWindow.ScrollColumn = 68
+    ActiveWindow.ScrollColumn = 69
+    ActiveWindow.ScrollColumn = 70
+    ActiveWindow.ScrollColumn = 71
+    ActiveWindow.ScrollColumn = 72
+    ActiveWindow.ScrollColumn = 73
+    ActiveWindow.ScrollColumn = 74
+    ActiveWindow.ScrollColumn = 75
+    ActiveWindow.ScrollColumn = 76
+    ActiveWindow.ScrollColumn = 77
+    ActiveWindow.ScrollColumn = 78
+    ActiveWindow.ScrollColumn = 79
+    ActiveWindow.ScrollColumn = 80
+    ActiveWindow.ScrollColumn = 81
+    ActiveWindow.ScrollColumn = 82
+    ActiveWindow.ScrollColumn = 83
+    ActiveWindow.ScrollColumn = 84
+    ActiveWindow.ScrollColumn = 86
+    ActiveWindow.ScrollColumn = 88
+    ActiveWindow.ScrollColumn = 90
+    ActiveWindow.ScrollColumn = 92
+    ActiveWindow.ScrollColumn = 93
+    ActiveWindow.ScrollColumn = 94
+    ActiveWindow.ScrollColumn = 95
+    ActiveWindow.ScrollColumn = 94
+    ActiveWindow.ScrollColumn = 93
+    ActiveWindow.ScrollColumn = 86
+    ActiveWindow.ScrollColumn = 77
+    ActiveWindow.ScrollColumn = 68
+    ActiveWindow.ScrollColumn = 66
+    ActiveWindow.ScrollColumn = 63
+    ActiveWindow.ScrollColumn = 55
+    ActiveWindow.ScrollColumn = 41
+    ActiveWindow.ScrollColumn = 38
+    ActiveWindow.ScrollColumn = 27
+    ActiveWindow.ScrollColumn = 22
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 1
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "=RC[99]"
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "=RC[114]"
+    Range("H3").Select
+    Columns("H:H").EntireColumn.AutoFit
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "=RC[129]"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "=RC[129]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=RC[129]"
+    Range("L2").Select
+    ActiveCell.FormulaR1C1 = "=RC[134]"
+    Range("U2").Select
+    ActiveCell.FormulaR1C1 = "=RC[18]"
+    Range("U1").Select
+    ActiveWindow.SmallScroll ToRight:=1
+End Sub
